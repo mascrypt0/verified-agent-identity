@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'cloud'
+        description: 'mascrypt0'
         required: true
-        default: 'cloud'
+        default: 'mascrypt0'
       agent_description:
-        description: 'cloud'
+        description: 'mascrypt0'
         required: true
-        default: 'cloud AI Agent'
+        default: 'mascrypt0 AI Agent'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "cloud", "description": "cloud AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "mascrypt0", "description": "mascrypt0 AI Agent"}'
